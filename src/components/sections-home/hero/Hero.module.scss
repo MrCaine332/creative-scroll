@@ -1,0 +1,23 @@
+.hero {;
+  //margin-top: 50px;
+  height: 100vh;
+  //transition: 5s;
+
+  .heroImage {
+    width: calc(var(--index) * 36);
+    height: auto;
+    position: absolute;
+    left: 37vw;
+    top: 22vh;
+    z-index: -1;
+  }
+
+  .heroTitle {
+    font-size: calc(var(--index) * 4);
+    position: absolute;
+    width: min-content;
+    top: 50vh;
+    //bottom: 10vh;
+    line-height: .9;
+  }
+}

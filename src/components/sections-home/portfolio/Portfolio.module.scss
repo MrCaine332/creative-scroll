@@ -1,0 +1,44 @@
+.portfolio {
+  height: auto;
+
+  .gallery {
+    display: flex;
+    padding: calc(var(--index) * 8) 0;
+
+    & > * {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: var(--gallery-gap);
+    }
+
+    .galleryItem {
+      max-width: calc(var(--index) * 21);
+      height: auto;
+      max-height: 180vh;
+      border-radius: 8px;
+    }
+
+    .galleryText {
+      color: var(--color-text);
+      h2 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: var(--color-header);
+        margin-bottom: 1.5rem;
+      }
+      p {
+        line-height: 1.75;
+      }
+    }
+
+    .galleryLeft {
+      //margin-top: calc(var(--gallery-gap) * 1.75);
+    }
+
+    .galleryRight {
+
+    }
+  }
+}
